@@ -1,11 +1,9 @@
 from setuptools import setup, find_packages
-from typing import List
 
 REQUIREMENT_FILE_NAME = "requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
-def get_requirements()->List(str):
-    
+def get_requirements():
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
     requirement_list = [dependency_name.replace("\n", "") for dependency_name in requirement_list]
