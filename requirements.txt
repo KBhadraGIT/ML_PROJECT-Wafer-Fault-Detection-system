@@ -1,2 +1,4 @@
-typing
+pandas
+numpy
+
 -e .
